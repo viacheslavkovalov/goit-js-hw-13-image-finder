@@ -63,7 +63,7 @@ function clearCardsContainer() {
 }
 
 function scrollInto() {
-  refs.loadMoreBtn.scrollIntoView({
+  refs.cardsContainer.scrollIntoView({
     behavior: 'smooth',
     block: 'end',
   });
@@ -77,7 +77,9 @@ function openLargeImage(event) {
   }
   const instance = basicLightbox.create(`<img src="${event.target.dataset.source}" />`);
     instance.show();
+
 }
+
 
 // Cкролл по кнопке Вверх
 
